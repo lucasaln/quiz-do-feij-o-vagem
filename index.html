@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz do Feijão-Vagem 🌱</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <!-- Tela do Quiz -->
+        <div id="quiz-screen">
+            <h1>🌱 Quiz: Cuidando do Feijão-Vagem</h1>
+            <h2 id="pergunta">Carregando pergunta...</h2>
+            
+            <div id="opcoes" class="btn-grid">
+                <!-- Os botões serão injetados pelo JavaScript aqui -->
+            </div>
+            
+            <div class="footer">
+                <span id="progresso">Pergunta 1 de 5</span>
+                <button id="btn-proximo" class="escondido">Próxima Pergunta ➔</button>
+            </div>
+        </div>
+
+        <!-- Tela de Resultado (Fica escondida até o fim) -->
+        <div id="resultado-screen" class="escondido">
+            <h1>Fim do Quiz! 🌾</h1>
+            <h2 id="pontuacao-texto">Você acertou X de Y perguntas.</h2>
+            <button id="btn-reiniciar" class="btn-acao">Tentar Novamente</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
